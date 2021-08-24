@@ -1,0 +1,122 @@
+/* styling for background image and overall content of the document */
+body {
+    background: url("../images/corona.jpeg") center;
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+    margin-top: 40px;
+  }
+  
+  /* styling for navigation bar menu items */
+    /* navigation bar */ 
+  #navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+    /* navigation bar content - ul */
+  #navbar ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+    /* navigation bar content - individual items - li */
+  #navbar ul li {
+    list-style: none;
+  }
+    /* navigation bar content - link text styling inside li - a */
+  #navbar ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.875em;
+    text-decoration: none;
+    padding: 1em;
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
+    /* navigation bar content - link text styling inside
+    li - a with hover selector */
+  #navbar ul li a:hover {
+    border-bottom: 3px solid #fff;
+  }
+  
+  /* styling for the introductory content */
+  .intro {
+    padding: 100px 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 5rem;
+  }
+  
+  /* styling for creating timeline events(div, ul, li) */
+    /* ul to create line in center of the web page */
+  .timeline ul {
+    list-style-type:none;
+    padding: 50px 0;
+  }
+    /* li for styling center line with 6px width */
+  .timeline ul li
+  {
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+  }
+    /* individual items in sections (li, div) */ 
+  .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #F45B69;
+  }
+  
+  
+    /* all odd numbered list items(1,3,5,7,9) to be placed
+    with 45px margin to the left of line in the center*/
+    .timeline ul li:nth-child(odd) div{left:45px;
+    transform:translate(-200px,0) }
+
+  
+  
+    /* all even numbered list items(2,4,6,8) to be placed
+    with -439px margin to the left of line in the center*/
+    .timeline ul li:nth-child(even) div{left:-450px;
+      transform:translate(+200px,0) }
+  
+  
+  
+  /* hide the content of each list item (li, div)
+  before scroll event and till it matches window width and height */
+  .timeline ul li div {visibility: hidden;
+    opacity: 0;
+  transition:all .5s ;}
+  
+  
+  
+  /* show the content of each list item (li, div) in document view
+  once it matches window width and height through scroll event */
+  
+  .timeline ul li.animation div{transform:none;
+  visibility: visible;
+opacity: 1;}
+  
+  
+  
+  /* styling for the time tag for creating event heading */
+time{font-weight: bold;
+    font-size: 30px ;
+display:block;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Corona Testing</title>
+  <!-- link stylesheet file -->
+  <link rel="stylesheet" href="./kop/formStyle.css">
+</head>
+
+<body>
+  <!-- Navigation Bar with menu items -->
+  <div id="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="coronatesting.html">Corona Testing</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Heading on top of the form -->
+  <div class="regform">
+    <h1>Information Form</h1>
+  </div>
+
+  <!-- Main form -->
+  <div class="main">
+    <form id="testForm">
+      <!-- input elements of the form -->
+      <div id="name">
+        <h2 class="name">Name</h2>
+        <input id="firstname" type="text" required name="first_name"><br>
+        <label id="firstlabel"> first_name</label>
+        <input id="lastname" type="text" required name="last_name"><br>
+        <label id="lastlabel"> last_name</label>
+        </div>
+        <h2 class="name">email</h2>
+        <input id="email" type="email" required name="email"><br>
+        <h2 class="name">DOB</h2>
+        <input id="dateofbirth" type="date" required name="dateofbirth"><br>
+        <h2 class="name">contact no.</h2>
+        <input id="mobile" type="text"  pattern="[6789][0-9]{9}" required name="contact" maxlength="10"><br>
+        <h2 class="name">occupation</h2>
+        <input id="profession" type="text"  pattern="[a-zA-Z]+" required name="occupation" ><br>
+        <h2 class="name">state</h2>
+        <select id="state" ><option> west bengal</option><option> sikkim</option><option> uttar pradesh</option><option>tamilnadu</option><option> rajasthan</option></select>
+        <h2 class="name">state</h2>
+        <select id="state" ><option> west bengal</option><option> sikkim</option><option> &bull;uttar pradesh</option><option>tamilnadu</option><option> rajasthan</option></select>
+        <h2 id="travel">any travel history in corona affected area</h2>
+       <div id="travel">
+        <input type="radio"   required name="travel_hisory" value="yes" >yes<br>
+        <input type="radio"   required name="travel_hisory" value="no" >no<br>
+       </div>
+       <h2 id="travel">any symptoms aming the following:</h2>
+
+        <div class=arrange>
+        <input type="checkbox"   name="symptoms" value="fever" >fever<br>
+        <input type="checkbox"   name="symptoms" value="cough"> cough<br>
+        <input type="checkbox"   name="symptoms" value="loss of taste or smell" >loss of taste and smell<br>
+        </div>
+
+        
+        
+
+        
+        <!-- add input and label for last name -->
+        <h1 id= ji></h1>
+      
+      <!-- add more form elements here -->
+<input id="submit" type="submit">
+
+    </form>
+  </div>
+
+  <!-- add script files -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+  <!-- add script files -->
+  <script src="/C23-COVID-19-Website-Homepage-main/js/form.js"></script>
+  
+
+</body>
+
+</html>
